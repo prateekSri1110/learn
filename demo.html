@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EXP2</title>
+        <style>
+            body
+            {
+                padding: 9%;
+                background-image: image-set('tenor.gif');
+                background-repeat: no-repeat;
+                background-color: black;
+                margin: auto;
+                background-size: contain;                
+            }
+            .section
+            {
+                position: relative;
+            }
+            .sec
+            {
+                margin: auto;
+                margin-left: -1%;
+                width: 44%;
+                text-align: center;                
+                border-radius: 100%;
+            }
+            .data
+            {
+                width: 56%;
+                float: right;
+                background-color: beige;
+            }
+            .btn
+            {
+                color: white;
+                background-color: darkred;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="split left" id="sect">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <script>            
+                    document.write("<button type='button' id='btn' class='btn'>Click ME!</button>");                 
+                    btn= document.getElementById("btn")
+                    sec = document.getElementById("sect")            
+                    function fun()
+                    {
+                        let color = '#';
+                        color += Math.random().toString(16).slice(2,8);
+                        sec.style.backgroundColor = color;
+                    }
+                    btn.addEventListener("click", fun)
+                    
+                </script>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="split right">
+                <span style="color: azure;">color code</span>
+            </div>
+        </section>
+    </body>
+</html>
